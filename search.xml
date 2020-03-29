@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Markdown-grammer</title>
-    <url>/2020/03/28/Markdown-grammer/</url>
-    <content><![CDATA[<h1 id="Markdown基本语法集合"><a href="#Markdown基本语法集合" class="headerlink" title="Markdown基本语法集合"></a>Markdown基本语法集合</h1><p>Markdown 基本语法是写博客的方法，本文将以该博文为内容展现形式，此文同样是从<a href="https://mp.weixin.qq.com/s?src=11&timestamp=1585394790&ver=2244&signature=6-ZqIta*Zc62K5KBgoURCbL-zOwUB*KLGFg8FLK3YnLkw51gGTiMpdLpnStASCfKY1rMK-12loYssqPf*L2BE6xwfsMaYqYI*0ikAafQeLZ0E0Q20uzgLOeHYLIY6re2&new=1" target="_blank" rel="noopener">网络大神</a>拷贝 下来的，为了让同学们查阅语法方便，所以这里给同学们提供一些示例，进而快速认知Markdown语法，然后在适合你的Hexo上写下属于自己博文吧 ！</p>
+    <title>css-filter学习笔记</title>
+    <url>/2020/03/29/css-filter%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>个人学习 CSS:filter 过程中写的笔记，不具备任何价值。CSS 滤镜（filter）属提供的图形特效，像模糊，锐化或元素变色。过滤器通常被用于调整图片，背景和边界的渲染。FILTER URL 还不是很明白…</p>
+<a id="more"></a>
+<hr>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><pre><code>// URL to SVG filter   
+filter: url(&quot;filters.svg#filter-id&quot;); 
+// &lt;filter-function&gt; values  
+filter: blur(0px);  // 高斯模糊  
+filter: brightness(100%);  // 线性乘法，使图片看起来更亮或更暗  
+filter: contrast(100%);  // 对比度  
+filter: drop-shadow($offset-x $offset-y $blur $spread $color);  // 阴影，相似于 box-shadow  
+filter: grayscale(0%);  // 转换为灰度图像  
+filter: hue-rotate(0deg);  // 色相旋转  
+filter: invert(0%);  // 反转输入图像  
+filter: opacity(100%);  // 不透明度  
+filter: saturate(100%);  // 转换图像饱和度  
+filter: sepia(0%);  // 将图像转换为深褐色，暖色调   
+// Multiple filters  
+filter: contrast(100%) brightness(100%);   
+// Global values  
+filter: inherit;  
+filter: initial;  
+filter: unset;    </code></pre><hr>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><blockquote>
+<p>// gray all images by 50% and blur by 10px<br>img {<br> filter: grayscale(0.5) blur(10px);<br>}   </p>
+</blockquote>
+<p>参考资料：<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/CSS/filter</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Markdown基本语法集合</title>
+    <url>/2020/03/28/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<p>Markdown 基本语法是写博客的方法，本文将以该博文为内容展现形式，此文同样是从<a href="https://mp.weixin.qq.com/s?src=11&timestamp=1585394790&ver=2244&signature=6-ZqIta*Zc62K5KBgoURCbL-zOwUB*KLGFg8FLK3YnLkw51gGTiMpdLpnStASCfKY1rMK-12loYssqPf*L2BE6xwfsMaYqYI*0ikAafQeLZ0E0Q20uzgLOeHYLIY6re2&new=1" target="_blank" rel="noopener">网络大神</a>拷贝 下来的，为了让同学们查阅语法方便，所以这里给同学们提供一些示例，进而快速认知Markdown语法，然后在适合你的Hexo上写下属于自己博文吧 ！</p>
+<a id="more"></a>  
 <h2 id="主要内容"><a href="#主要内容" class="headerlink" title="主要内容"></a>主要内容</h2><blockquote>
 <p>Markdown是什么<br>是谁创造了它<br>为什么要使用它<br>基本语法</p>
 </blockquote>
@@ -49,7 +81,7 @@
 </blockquote>
 </blockquote>
 <h4 id="4-4-代码区块"><a href="#4-4-代码区块" class="headerlink" title="4.4 代码区块"></a>4.4 代码区块</h4><p>代码区块的建立是在每行加上4个空格或者一个制表符（如同写代码一样）。如:<br>普通段落：<br>void main()<br>{<br>  printf(“小钱真是一个聪明小帅哥。”);<br>}</p>
-<p>代码区块：<br>    void main()<br>    {<br>        printf(“小钱真是一个聪明小帅哥。”);<br>    }</p>
+<p>代码区块：<br>    void main()<br>    {<br>        &ensp;&ensp;&ensp;printf(“小钱真是一个聪明小帅哥。”);<br>    }</p>
 <p><strong>注意</strong>:需要和普通段落之间存在空行。空了4个空后字体会变绿即可。  </p>
 <h4 id="4-5-强调"><a href="#4-5-强调" class="headerlink" title="4.5 强调"></a>4.5 强调</h4><p>在强调内容两侧分别加上*或者_，如：  </p>
 <blockquote>
@@ -118,6 +150,55 @@
 </blockquote>
 <h4 id="4-10-反斜杠"><a href="#4-10-反斜杠" class="headerlink" title="4.10 反斜杠\"></a>4.10 反斜杠\</h4><p>相当于<strong>反转义</strong>作用。使符号成为普通符号。</p>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>有这些写一篇好的博文已经足够了，如果有需要继续学习的同学可以去代码库学习 。<br>但是包括额外扩展运用到Markdown都是需要收费的，14.95美元，需要的人可以理性购买，我比较穷，等有需要的时候再去购买。包括一些表格的制作等等。<br>好啦！！！希望对大家有所帮助，快去学习吧！然后制作属于自己的博文。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hello-world大集合</title>
+    <url>/2020/03/28/hello-world%E5%A4%A7%E9%9B%86%E5%90%88/</url>
+    <content><![CDATA[<p>学计算机的都需要向”hello world”致敬！！！<br>原本是hexo搭建后自主形成的一个基础模板，但想了想干脆把这个博文改成一个相对有趣的博文。都说hello world是只有程序员才明白的梗，那我就上网查一下把所有语言的hello world来个大集合！快来看看吧！这里有没有你熟悉的语言呢？</p>
+<a id="more"></a>
+
+<h2 id="热门语言"><a href="#热门语言" class="headerlink" title="热门语言"></a>热门语言</h2><h3 id="Pascal"><a href="#Pascal" class="headerlink" title="Pascal"></a>Pascal</h3><blockquote>
+<p>program Helloworld;<br><strong>begin</strong> writeln(‘hello,world.’);<br><strong>end</strong></p>
+</blockquote>
+<h3 id="C"><a href="#C" class="headerlink" title="C"></a>C</h3><blockquote>
+<p>#include&lt;stdio.h&gt;<br>main( ){<br>&ensp;&ensp;&ensp;printf(“hello world!”);<br>}</p>
+</blockquote>
+<h3 id="C-1"><a href="#C-1" class="headerlink" title="C++"></a>C++</h3><blockquote>
+<p>#include&lt;iostream&gt;<br>using namespace std;<br>int main( ){<br>&ensp;&ensp;cout &lt;&lt; “Hello World”&lt;&lt;endl;<br>&ensp;&ensp;return 0;<br>}  </p>
+</blockquote>
+<h3 id="Fortran"><a href="#Fortran" class="headerlink" title="Fortran"></a>Fortran</h3><blockquote>
+<p>PROGRAM HELLOWORLD<br><strong>PRINT</strong> *, ‘Hello, World!’<br>END     </p>
+</blockquote>
+<h3 id="PERL"><a href="#PERL" class="headerlink" title="PERL"></a>PERL</h3><blockquote>
+<p>$welcome = “Hello World”;<br>print “$welcome\n”;  </p>
+</blockquote>
+<h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><blockquote>
+<p>&lt;html&gt;<br>&ensp;&lt;head&gt;<br>&ensp;&ensp;&lt;title&gt;Hello, World&lt;/title&gt;<br>&ensp;&lt;/head&gt;<br>&ensp;&lt;body&gt;<br>&ensp;&ensp;&ensp;&lt;h1&gt;Hello, World&lt;/h1&gt;<br>&ensp;&lt;/body&gt;<br>&lt;/html&gt;</p>
+</blockquote>
+<h3 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h3><blockquote>
+<p>SELECT ‘HELLO, WORLD’ AS HELLO</p>
+</blockquote>
+<h3 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h3><blockquote>
+<p>alert(‘Hello, World.’);</p>
+</blockquote>
+<h3 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h3><blockquote>
+<?php $hello = 'Hello, World.';  
+echo "$hello";?>
+</blockquote>
+<h3 id="C’-’"><a href="#C’-’" class="headerlink" title="C’#’"></a>C’#’</h3><blockquote>
+<p>public class Hello<br>{<br>  &ensp;&ensp;public static void Main()<br>  &ensp;&ensp;{<br>  &ensp;&ensp;&ensp;&ensp;System.Console.WriteLine(“Hello, World!”);<br>  &ensp;&ensp;}<br>}  </p>
+</blockquote>
+<h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><blockquote>
+<p>public class Hello {<br>&ensp;&ensp;public static void main(String[] args) {<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;System.out.println(“Hello, World”);<br>&ensp;&ensp;}<br>}</p>
+</blockquote>
+<p>###Python</p>
+<blockquote>
+<p>print(“hello world”)</p>
+</blockquote>
+<p>##</p>
+<p>其他的我就不多写了，像什么TypeScript、AngularJS，大家如果有兴趣的话可以自己去学习！<br>不知道大家知道多少呢？如果还有更多的话，欢迎补充！！！</p>
+<p><img src="https://i01piccdn.sogoucdn.com/754ca89177e7dbb3" alt=""></p>
 ]]></content>
   </entry>
 </search>
